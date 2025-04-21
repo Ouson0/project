@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouson.com</title>
+
+    <style>
+         body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background:linear-gradient(135deg, #0f0f0f, #1a1a1a); 
+            color: #333; 
+        }
+        header {
+            background:linear-gradient(to right, #00f260, #0575e6); 
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px #000;
+        }
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .laptop-card {
+            background-color: #1e1e1e; 
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #333; 
+        }
+        .laptop-card:hover {
+            transform: scale(1.05);
+            box-shadow:  0 0 20px rgba(0, 255, 255, 0.6);
+        }
+        .laptop-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-bottom: 2px solid #00ffff;
+        }
+        .laptop-card h3 {
+            color: #00ffff; 
+            font-size: 24px;
+            margin: 20px 0 10px;
+            padding: 0 15px;
+        }
+        .laptop-card p {
+            color: #aaa;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            padding: 0 15px;
+        }
+        .laptop-card ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 15px;
+        }
+        .laptop-card ul li {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        .laptop-card a {
+            display: inline-block;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          
+        }
+        .laptop-card a:hover {
+            text-decoration: underline;
+            background-color: #1e1e1e;
+        }
+        footer {
+            background-color: #1d3d5b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mid-Range Laptops</h1>
+        <p>Performance. Power. Precision.</p>
+    </header>
+
+<section>
+   
+    <div class="laptop-card">
+        <img src="asus.png" alt="ASUS TUFF F15">
+        <h3>Asus TUF F15</h3>
+        
+        <p><a href="asus.html" >More Info</a></p>
+    </div>
+
+ 
+    <div class="laptop-card">
+        <img src="omen.png" alt="HP Omen 15">
+        <h3>HP Omen 15</h3>
+        
+        <p><a href="omen.html" >More Info</a></p>
+    </div>
+
+    <div class="laptop-card">
+        <img src="accer.png" alt="Accer Nitro 5">
+        <h3>Accer Nitro 5 </h3>
+        
+        <p><a href="accer.html" >More Info</a></p>
+    </div>
+
+   
+    <div class="laptop-card">
+        <img src="victus.png" alt="HP Victus 15">
+        <h3>HP Victus 15</h3>
+       
+        <p><a href="victus.html" >More Info</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; Ouson's project</p>
+</footer>
+
+</body>
+</html>
